@@ -1,0 +1,20 @@
+{
+  "name": "Hello Extensions",
+  "description": "Base Level Extension",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "hello.html",
+    "default_icon": "icons/icon-128.png"
+  },
+  "background": {
+    "service_worker": "service-worker.js",
+    "type": "module",
+    "permissions": ["storage", "activeTab", "scripting"]
+  },
+    "minimum_chrome_version": "102",
+  "omnibox": {
+    "keyword": "api"
+  }
+}
+
